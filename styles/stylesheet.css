@@ -1,5 +1,5 @@
 body {
-    background-color:#F9F3EC;
+    background-color: #F9F3EC;
 }
 .title {
     text-align: center;
@@ -76,4 +76,21 @@ body {
 .buttons2 {
     position: absolute;
     right: 5px;
+}
+.sidebar {
+    width: 250px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    background-color: whitesmoke;
+    color: #55869b;
+}
+.mynotes {
+    font-family: 'Roboto Mono', monospace;
+}
+footer {
+    text-align: center;
+    color:#55869b;  
+    font-family: 'Roboto Mono', monospace;
 }
