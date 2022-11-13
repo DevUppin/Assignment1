@@ -1,3 +1,43 @@
 body {
     background-color:#F9F3EC;
 }
+.title {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #5394A0; 
+}
+.menu {
+    color: #5394A0;
+    font-family: 'Roboto Mono', monospace;
+    float: right;
+}
+
+.newNote {
+    position: relative;
+    left: 250px;
+    width: 120px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #55869b;
+
+}
+
+.dmode {
+   position: absolute;
+   right: 10px;
+   width: 120px;
+   border: 0;
+   line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #6F6A87;
+
+}
