@@ -12,7 +12,7 @@ body {
     float: right;
 }
 
-.newNote {
+/* .newNote {
     position: relative;
     left: 275px;
     width: 120px;
@@ -23,7 +23,7 @@ body {
     text-align: center;
     color: white;
     border-radius: 10px;
-    background-color: #55869b;
+    background-color:#5394A0;
 
 }
 
@@ -48,8 +48,12 @@ body {
     grid-template-columns: 82%;
     justify-content: end;
     row-gap: 10px;
-
+    margin: 10px;
 }
+#notepad {
+    border: 3px solid cornflowerblue; 
+}
+
 .tosave {
     width: 80px;
     border: 0;
@@ -59,7 +63,7 @@ body {
     text-align: center;
     color: white;
     border-radius: 10px;
-    background-color: #6F6A87;
+    background-color:#5394A0;
 }
 .cancelnote {
     width: 80px;
@@ -85,12 +89,59 @@ body {
     padding-top: 20px;
     background-color: whitesmoke;
     color: #55869b;
+} */
+.fullpage {
+    display: grid;
+    grid-template-rows: repeat(1fr, 2fr);
+    grid-template-columns: 20% 80%;
+    grid-row: 1/2;
+    grid-column: 1/6;
 }
-.mynotes {
-    font-family: 'Roboto Mono', monospace;
+textarea {
+    width: 1225px;
+    border: 3px solid cornflowerblue;
 }
+.tosave {
+    width: 80px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color:#5394A0;
+}
+.cancelnote {
+    width: 80px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #D9827C;
+
+}
+
 footer {
     text-align: center;
     color:#55869b;  
     font-family: 'Roboto Mono', monospace;
+}
+.mynotes {
+    color: #55869b;
+    font-family: 'Roboto Mono', monospace;
+}
+header a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.notes a {
+    text-decoration: none;
+}
+.notes {
+    list-style-type: square;
+    list-style: #4B7171;
 }
