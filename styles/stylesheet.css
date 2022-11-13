@@ -14,7 +14,7 @@ body {
 
 .newNote {
     position: relative;
-    left: 250px;
+    left: 275px;
     width: 120px;
     border: 0;
     line-height: 2.5;
@@ -40,4 +40,40 @@ body {
     border-radius: 10px;
     background-color: #6F6A87;
 
+
+}
+
+.texttotype {
+    display: grid;
+    grid-template-columns: 82%;
+    justify-content: end;
+    row-gap: 10px;
+
+}
+.tosave {
+    width: 80px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #6F6A87;
+}
+.cancelnote {
+    width: 80px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #D9827C;
+
+}
+.buttons2 {
+    position: absolute;
+    right: 5px;
 }
