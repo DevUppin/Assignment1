@@ -1,5 +1,4 @@
 body {
-    background-color: ;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(
@@ -133,6 +132,10 @@ nav > a {
         grid-template-columns: 100%;
         grid-row: 1/2;
         grid-column: 1/6;
+    }
+    body {
+        /* background-color: #ECE2D0; */
+        background: #ECE2D0 100%;
     }
 }
 
