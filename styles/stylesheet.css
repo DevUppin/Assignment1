@@ -1,5 +1,14 @@
 body {
-    background-color: #F9F3EC;
+    background-color: ;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      whitesmoke 0%,
+      whitesmoke 18%,
+      #ECE2D0 0%,
+      #ECE2D0 100%
+    );
 }
 .title {
     text-align: center;
