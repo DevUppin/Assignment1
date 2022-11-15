@@ -115,4 +115,15 @@ nav > a {
     justify-content: end;
     gap: 5px;
 }
+    
+    
+    
+@media screen and (max-width:600px) {
+    .fullpage {
+        grid-template-rows: repeat(1fr, 2fr);
+        grid-template-columns: 100%;
+        grid-row: 1/2;
+        grid-column: 1/6;
+    }
+}
 
