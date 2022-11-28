@@ -11,6 +11,14 @@
 } */
 body {
     background-color: #ECE2D0;
+    background: linear-gradient(
+        to right,
+        whitesmoke 0%,
+        whitesmoke 18%,
+        #ECE2D0 0%,
+        #ECE2D0 0%
+
+    );
 }
 .title {
     text-align: center;
@@ -40,47 +48,30 @@ textarea {
     margin-left: auto;
 }
 .tosave {
-    width: 80px;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
     background-color:#5394A0;
 
     
 }
 
 .cancelnote {
-    width: 80px;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
     background-color: #D9827C;
 
 
 }
 .newNote {
-    width: 120px;
+    /* width: 120px; */
     float: left;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    background-color:#5394A0;
+    background-color:#5394A0; 
 
 }
 .dmode {
     right: 10px;
+     background-color: #6F6A87; 
+     margin-bottom: 5px;
+     margin-left: auto;
+     position: sticky;
+ }
+ .buttonstyle {
     width: 120px;
     border: 0;
     line-height: 2.5;
@@ -89,10 +80,9 @@ textarea {
      text-align: center;
      color: white;
      border-radius: 10px;
-     background-color: #6F6A87;
-     margin-bottom: 5px;
-     margin-left: auto;
+
  }
+
  
 
 footer {
@@ -101,7 +91,7 @@ footer {
     font-family: 'Roboto Mono', monospace;
 }
 .mynotes {
-    color: #55869b;
+    color:#55869b;  
     font-family: 'Roboto Mono', monospace;
 }
 header a {
@@ -126,12 +116,21 @@ nav > a {
     justify-content: end;
     gap: 5px;
 }
+.about {
+    display: inline-block;
+}
+.docs {
+    display: inline-block;
+}
     
+.bottomContent {
+    padding-top: 25px;
+}
     
     
 @media screen and (max-width:600px) {
     .fullpage {
-        grid-template-rows: repeat(1fr, 2fr);
+        /* grid-template-rows: repeat(1fr, 2fr); */
         grid-template-columns: 100%;
         grid-row: 1/2;
         grid-column: 1/6;
