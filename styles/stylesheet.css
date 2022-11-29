@@ -9,7 +9,7 @@
       #ECE2D0 100%
     );
 } */
-body {
+/* body {
     background-color: #ECE2D0;
     background: linear-gradient(
         to right,
@@ -19,6 +19,20 @@ body {
         #ECE2D0 0%
 
     );
+} */
+.fullbody {
+    background-color: #ECE2D0;
+    background: linear-gradient(
+        to right,
+        whitesmoke 0%,
+        whitesmoke 18%,
+        #ECE2D0 0%,
+        #ECE2D0 0%
+
+    );
+}
+.darkMode {
+    background-color: #36454F;
 }
 .title {
     text-align: center;
