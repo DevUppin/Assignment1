@@ -1,7 +1,8 @@
 const darkModeTheme = document.querySelector(".dmode")
+const newNote = document.querySelector("newNote")
 
 function changeToDarkMode () {
-    document.body.style.background = '#36454F'
+    document.body.classList.toggle("toDark")
     
 }
 darkModeTheme.addEventListener('click', changeToDarkMode)
@@ -18,30 +19,26 @@ darkModeTheme.addEventListener('click', changeTextButton)
 
 
 
-function makeWhite(e) {
+function makeBlack(e) {
     if (e.target.tagName === "BUTTON") {
         e.target.style.backgroundColor = "black";
     }
 
 }
-darkModeTheme.addEventListener('click', makeWhite)
+darkModeTheme.addEventListener('click', makeBlack)
 
 darkModeTheme.addEventListener('click', function onClick(event) {
   //Change text color for clicked element only
   event.target.style.color = 'white';
 });
-
-function backToLight (e) { 
-    if (darkModeTheme.textContent === 'Dark Mode') {
-        document.body.style.backgroundColor = '#ECE2D0';
-        e.target.style.backgroundColor = '#6F6A87';
-        e.target.style.color = 'white'
-
-
+function NormButtonColr (event) {
+    if (event.target.textContent === "Dark Mode") {
+        event.target.style.backgroundColor = '#6F6A87'
     }
+            
+};
 
-}
-darkModeTheme.addEventListener('click', backToLight)
+darkModeTheme.addEventListener('click', NormButtonColr)
 
 const clickSave = document.querySelector(".tosave")
 
@@ -53,11 +50,30 @@ function alertUser () {
 
 clickSave.addEventListener('click', alertUser)
 
-const list = []
-document.getElementsByClassName("notes") = list
+let noteList = ["note one", "note two"]
+const noteElements = document.querySelector(".notes")
 
-function pushNote () {
-    list.push('one' , 'five');
-    document.getElementsByClassName("notes") = list
+// function populateList (arr) {
+//     for (let item of arr) {
+//         let listItem = document.createElement("li")
+//         listItem.textContent = item
+//         noteElements.appendChild(listItem)
+//     }
+
+// }
+clickSave.addEventListener('click', populateList)
+
+
+
+const notesListElement = document.querySelector(".notes");
+function populateList(arr)
+{
+    for (let item of arr){
+        let listItem = document.createElement("li");
+        listItem.textContent = item;
+        notesListElement.appendChild(listItem);
+    } // for (let i = 0); i < arr.length; i++ ) // arr.forEach()
+
 }
-clickSave.addEventListener('click', pushNote)
+clickSave.addEventListener('click', populateList)
+

@@ -31,8 +31,15 @@
 
     );
 }
-.darkMode {
-    background-color: #36454F;
+.toDark {
+    background: #36454F;
+    background: linear-gradient(
+        to right,
+        #2E234A 0%,
+        #2E234A 18%,
+        #36454F 0%,
+        #36454F 0%
+    )
 }
 .title {
     text-align: center;
@@ -149,8 +156,9 @@ nav > a {
         grid-row: 1/2;
         grid-column: 1/6;
     }
-    body {
+    .fullbody {
         /* background-color: #ECE2D0; */
+        background-color: #ECE2D0 100%;
         background: #ECE2D0 100%;
     }
 }
