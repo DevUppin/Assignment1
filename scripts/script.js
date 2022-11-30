@@ -17,11 +17,23 @@ function changeTextButton () {
 }
 darkModeTheme.addEventListener('click', changeTextButton)
 
+const changeNNcolor = document.querySelector(".newNote")
+const changeTScolor = document.querySelector(".tosave")
+const changeCancel = document.querySelector('.cancelnote')
 
+function makeBlack() {
+    if (darkModeTheme.textContent === "Light Mode") {
+        darkModeTheme.style.backgroundColor = "black";
+        changeNNcolor.style.backgroundColor = 'black';
+        changeTScolor.style.backgroundColor = 'black';
+        changeCancel.style.backgroundColor = "#70121A"
+    }
+    else if (darkModeTheme.textContent === "Dark Mode") {
+        darkModeTheme.style.backgroundColor = "#6F6A87";
+        changeNNcolor.style.backgroundColor = '#5394A0';
+        changeTScolor.style.backgroundColor = '#5394A0';
+        changeCancel.style.backgroundColor = "#D9827C"
 
-function makeBlack(e) {
-    if (e.target.tagName === "BUTTON") {
-        e.target.style.backgroundColor = "black";
     }
 
 }
@@ -37,7 +49,6 @@ function NormButtonColr (event) {
     }
             
 };
-
 darkModeTheme.addEventListener('click', NormButtonColr)
 
 const clickSave = document.querySelector(".tosave")
