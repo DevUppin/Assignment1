@@ -61,30 +61,5 @@ function alertUser () {
 
 clickSave.addEventListener('click', alertUser)
 
-let noteList = ["note one", "note two"]
-const noteElements = document.querySelector(".notes")
 
-// function populateList (arr) {
-//     for (let item of arr) {
-//         let listItem = document.createElement("li")
-//         listItem.textContent = item
-//         noteElements.appendChild(listItem)
-//     }
-
-// }
-clickSave.addEventListener('click', populateList)
-
-
-
-const notesListElement = document.querySelector(".notes");
-function populateList(arr)
-{
-    for (let item of arr){
-        let listItem = document.createElement("li");
-        listItem.textContent = item;
-        notesListElement.appendChild(listItem);
-    } // for (let i = 0); i < arr.length; i++ ) // arr.forEach()
-
-}
-clickSave.addEventListener('click', populateList)
 
