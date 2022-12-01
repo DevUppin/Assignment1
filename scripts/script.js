@@ -39,27 +39,28 @@ function makeBlack() {
 }
 darkModeTheme.addEventListener('click', makeBlack)
 
-darkModeTheme.addEventListener('click', function onClick(event) {
-  //Change text color for clicked element only
-  event.target.style.color = 'white';
-});
-function NormButtonColr (event) {
-    if (event.target.textContent === "Dark Mode") {
-        event.target.style.backgroundColor = '#6F6A87'
-    }
-            
-};
-darkModeTheme.addEventListener('click', NormButtonColr)
-
 const clickSave = document.querySelector(".tosave")
 
-function alertUser () {
-    prompt('Enter the title of the note:');
-    alert('Your note has been saved')
+function saveNote () {
+    noteName = prompt('Enter the title of the note:');
+    alert('Saved');
     
-}
+    const ItemsInNotes = [noteName];
+    const NotesElement = document.querySelector(".notes");
 
-clickSave.addEventListener('click', alertUser)
+    function populateList(arr) {
+        for (let item of arr) {
+            let listItem = document.createElement("li");
+            listItem.textContent = item;
+            NotesElement.appendChild(listItem)
+        }
+       
+    }
+    populateList(ItemsInNotes)
+
+
+}
+clickSave.addEventListener('click', saveNote)
 
 
 
