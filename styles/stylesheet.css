@@ -126,6 +126,7 @@ header a {
 .notes {
     list-style-type: square;
     list-style: #4B7171;
+    color: #5394A0;
 }
 nav > a {
     color: #5394A0;

@@ -43,7 +43,6 @@ const clickSave = document.querySelector(".tosave")
 
 function saveNote () {
     noteName = prompt('Enter the title of the note:');
-    alert('Saved');
     
     const ItemsInNotes = [noteName];
     const NotesElement = document.querySelector(".notes");
@@ -56,7 +55,8 @@ function saveNote () {
         }
        
     }
-    populateList(ItemsInNotes)
+    populateList(ItemsInNotes);
+    alert('Saved');
 
 
 }
