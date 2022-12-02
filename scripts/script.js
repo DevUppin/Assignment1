@@ -41,6 +41,31 @@ darkModeTheme.addEventListener('click', makeBlack)
 
 const clickSave = document.querySelector(".tosave")
 
+const textInput = document.querySelector("#notepad");
+
+textInput.value = ""
+
+let notesArray = {
+    title: saveNote.noteName,
+    body: textInput.value
+}
+console.log(notesArray)
+function updateTextarea(item) {
+    if (textInput != "") {
+        for (let content of item) {
+            let textitem = document.createElement("textarea");
+            textitem.textContent = content;
+            textInput.appendChild(textitem)
+        }
+
+    }
+
+}
+clickSave.addEventListener('click', updateTextarea(textInput.value))
+
+
+
+
 function saveNote () {
     noteName = prompt('Enter the title of the note:');
     
@@ -61,6 +86,8 @@ function saveNote () {
 
 }
 clickSave.addEventListener('click', saveNote)
+
+
 
 
 
