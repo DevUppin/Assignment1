@@ -46,8 +46,8 @@ const textInput = document.querySelector("#notepad");
 textInput.value = ""
 
 let notesArray = {
-    title: saveNote.noteName,
-    body: textInput.value
+    title: `${saveNote.noteName}`,
+    body: `${textInput.value}`
 }
 console.log(notesArray)
 function updateTextarea(item) {
@@ -87,7 +87,23 @@ function saveNote () {
 }
 clickSave.addEventListener('click', saveNote)
 
+const cancelBtn = document.querySelector('.cancelnote')
 
+function cancel() {
+    clickSave.classList.add("hidden");
+    textInput.classList.add("hidden");
+    cancelBtn.classList.add("hidden")
+    
+}
 
+cancelBtn.addEventListener('click', cancel)
 
+function newNotes() {
+    clickSave.classList.remove("hidden");
+    textInput.classList.remove("hidden");
+    cancelBtn.classList.remove("hidden");
+    textInput.value = ""
 
+}
+
+changeNNcolor.addEventListener('click', newNotes)
